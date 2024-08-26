@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow:auto;
+    
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind the content */
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the video covers the entire area */
+    transform: translate(-50%, -50%);
+}
+/* bg vedioo end */
+
+.logo{
+    height: 30px;
+    width: auto;
+    padding-right: 2px;
+
+}
+
+#parent{
+    height:100%;
+    width: 100%;
+    background-color: rgba(0, 0,0, .8);
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: space-around;
+    
+  
+}
+
+
+#parent .container{
+    box-shadow: 5px 10px 15px rgb(77, 65, 43);
+     border: 2px solid rgba(255, 255,255, .8);
+    height:auto;
+    width: auto;
+    background-color: rgba(0, 0,0, .7);
+    border-radius: 25px;
+    color: azure;
+    
+}
+
+.img-container {
+    /* border: 2px solid red; */
+    float: left;
+    width: 20%;
+    padding: 5px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container h4{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 2px;
+    color:honeydew;
+  }
+
+  
+
+
+
+
+
+  .carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* Set to auto to fit the content */
+  padding: 0; /* Remove padding */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none; /* Remove focus outline */
+}
+/* 
+.clearfix a:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+img{
+  width:70%;
+}
+
+
+@media screen and (max-width:980px) {
+
+  #parent{
+    justify-content: center;
+    gap: 4%;
+
+  }
+  
+  #parent .container{
+    height: auto;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+  }
+
+  img {
+    float: none;
+    
+    width: 100%;
+    height: 100%;
+  }
+}
